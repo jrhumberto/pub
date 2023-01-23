@@ -1,0 +1,57 @@
+digraph "Web Service" {
+	graph [bb="0,0,411,162",
+		fontcolor="#2D3436",
+		fontname="Sans-Serif",
+		fontsize=15,
+		label="Web Service",
+		lheight=0.24,
+		lp="205.5,12.5",
+		lwidth=1.31,
+		nodesep=0.60,
+		pad=2.0,
+		rankdir=LR,
+		ranksep=0.75,
+		splines=ortho
+	];
+	node [fixedsize=true,
+		fontcolor="#2D3436",
+		fontname="Sans-Serif",
+		fontsize=13,
+		height=1.4,
+		imagescale=true,
+		label="\N",
+		labelloc=b,
+		shape=box,
+		style=rounded,
+		width=1.4
+	];
+	edge [color="#7B8894"];
+	b03ab5aa8edb4fb9ba40e67a4db653aa	[height=1.9028,
+		image="/home/humbertoserpro/diagramas/.env/lib/python3.8/site-packages/resources/aws/network/elastic-load-balancing.png",
+		label=lb,
+		pos="50.5,93.5",
+		shape=none,
+		width=1.4028];
+	ea5bc2dc68724bd08506502440ffee46	[height=1.9028,
+		image="/home/humbertoserpro/diagramas/.env/lib/python3.8/site-packages/resources/aws/compute/ec2.png",
+		label=web,
+		pos="205.5,93.5",
+		shape=none,
+		width=1.4028];
+	b03ab5aa8edb4fb9ba40e67a4db653aa -> ea5bc2dc68724bd08506502440ffee46	[dir=forward,
+		fontcolor="#2D3436",
+		fontname="Sans-Serif",
+		fontsize=13,
+		pos="e,154.9,93.5 101.25,93.5 101.25,93.5 144.9,93.5 144.9,93.5"];
+	c90c4c9e596d4db7b3581345c3d5f487	[height=1.9028,
+		image="/home/humbertoserpro/diagramas/.env/lib/python3.8/site-packages/resources/aws/database/rds.png",
+		label=userdb,
+		pos="360.5,93.5",
+		shape=none,
+		width=1.4028];
+	ea5bc2dc68724bd08506502440ffee46 -> c90c4c9e596d4db7b3581345c3d5f487	[dir=forward,
+		fontcolor="#2D3436",
+		fontname="Sans-Serif",
+		fontsize=13,
+		pos="e,309.9,93.5 256.25,93.5 256.25,93.5 299.9,93.5 299.9,93.5"];
+}

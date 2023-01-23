@@ -1,0 +1,316 @@
+digraph "Contagem de pontos de função para projetos de Data Science" {
+	graph [bb="0,0,1098,799",
+		fontcolor="#2D3436",
+		fontname="Sans-Serif",
+		fontsize=15,
+		label="Contagem de pontos de função para projetos de Data Science",
+		lheight=0.24,
+		lp="549,12.5",
+		lwidth=6.46,
+		nodesep=0.60,
+		pad=2.0,
+		rankdir=LR,
+		ranksep=0.75,
+		splines=ortho
+	];
+	node [fixedsize=true,
+		fontcolor="#2D3436",
+		fontname="Sans-Serif",
+		fontsize=13,
+		height=1.4,
+		imagescale=true,
+		label="\N",
+		labelloc=b,
+		shape=box,
+		style=rounded,
+		width=1.4
+	];
+	edge [color="#7B8894"];
+	subgraph "cluster_Fronteira da solução" {
+		graph [bb="8,216,945,704",
+			bgcolor="#E5F5FD",
+			fontname="Sans-Serif",
+			fontsize=12,
+			label="Fronteira da solução",
+			labeljust=l,
+			lheight=0.18,
+			lp="77,693.5",
+			lwidth=1.69,
+			pencolor="#AEB6BE",
+			rankdir=LR,
+			shape=box,
+			style=rounded
+		];
+		subgraph cluster_Transações {
+			graph [bb="16,224,937,464",
+				bgcolor="#EBF3E7",
+				fontname="Sans-Serif",
+				fontsize=12,
+				label=Transações,
+				labeljust=l,
+				lheight=0.18,
+				lp="57.5,453.5",
+				lwidth=0.93,
+				pencolor="#AEB6BE",
+				rankdir=LR,
+				shape=box,
+				style=rounded
+			];
+			subgraph "cluster_Explorar dados" {
+				graph [bb="24,232,305,435",
+					bgcolor="#ECE8F6",
+					fontname="Sans-Serif",
+					fontsize=12,
+					label="Explorar dados",
+					labeljust=l,
+					lheight=0.18,
+					lp="77.5,424.5",
+					lwidth=1.26,
+					pencolor="#AEB6BE",
+					rankdir=LR,
+					shape=box,
+					style=rounded
+				];
+				a92fb81eaeed4c419e5a01a897762314	[height=2.3056,
+					image="/home/humbertoserpro/diagramas/.env/lib/python3.8/site-packages/resources/azure/general/developertools.png",
+					label="Estratégias de 
+obtenção",
+					pos="82.5,323",
+					shape=none,
+					width=1.4028];
+				a10ad9f257eb4687900028ad3300c8fc	[height=2.3056,
+					image="/home/humbertoserpro/diagramas/.env/lib/python3.8/site-packages/resources/azure/analytics/stream-analytics-jobs.png",
+					label="Obter dados
+(CE/SE)",
+					pos="246.5,323",
+					shape=none,
+					width=1.4028];
+				a92fb81eaeed4c419e5a01a897762314 -> a10ad9f257eb4687900028ad3300c8fc	[dir=none,
+					fontcolor="#2D3436",
+					fontname="Sans-Serif",
+					fontsize=13,
+					pos="133.04,323 153,323 175.88,323 195.84,323",
+					style=dashed];
+			}
+			subgraph "cluster_Preparar dados" {
+				graph [bb="344,232,617,435",
+					bgcolor="#ECE8F6",
+					fontname="Sans-Serif",
+					fontsize=12,
+					label="Preparar dados",
+					labeljust=l,
+					lheight=0.18,
+					lp="398,424.5",
+					lwidth=1.28,
+					pencolor="#AEB6BE",
+					rankdir=LR,
+					shape=box,
+					style=rounded
+				];
+				a8be9379b023470697f9ba005ab97b01	[height=2.3056,
+					image="/home/humbertoserpro/diagramas/.env/lib/python3.8/site-packages/resources/azure/storage/storage-explorer.png",
+					label="Técnicas de 
+preparação",
+					pos="402.5,323",
+					shape=none,
+					width=1.4028];
+				"324dc9ce84db433398a9ad5a60a19942"	[height=2.3056,
+					image="/home/humbertoserpro/diagramas/.env/lib/python3.8/site-packages/resources/azure/analytics/stream-analytics-jobs.png",
+					label="Transformar dados
+(EE)",
+					pos="558.5,323",
+					shape=none,
+					width=1.4028];
+				a8be9379b023470697f9ba005ab97b01 -> "324dc9ce84db433398a9ad5a60a19942"	[dir=none,
+					fontcolor="#2D3436",
+					fontname="Sans-Serif",
+					fontsize=13,
+					pos="453.15,323 470.68,323 490.31,323 507.84,323",
+					style=dashed];
+			}
+			subgraph "cluster_Criar modelos" {
+				graph [bb="656,232,929,435",
+					bgcolor="#ECE8F6",
+					fontname="Sans-Serif",
+					fontsize=12,
+					label="Criar modelos",
+					labeljust=l,
+					lheight=0.18,
+					lp="706.5,424.5",
+					lwidth=1.18,
+					pencolor="#AEB6BE",
+					rankdir=LR,
+					shape=box,
+					style=rounded
+				];
+				"091584723e9f40fb80ac1a6a604edc19"	[height=2.3056,
+					image="/home/humbertoserpro/diagramas/.env/lib/python3.8/site-packages/resources/azure/ml/cognitive-services.png",
+					label="Função de 
+modelagem",
+					pos="714.5,323",
+					shape=none,
+					width=1.4028];
+				"4153f0f392a44835b0d17b06456a05ff"	[height=2.3056,
+					image="/home/humbertoserpro/diagramas/.env/lib/python3.8/site-packages/resources/azure/analytics/stream-analytics-jobs.png",
+					label="Executar modelo
+(EE)",
+					pos="870.5,323",
+					shape=none,
+					width=1.4028];
+				"091584723e9f40fb80ac1a6a604edc19" -> "4153f0f392a44835b0d17b06456a05ff"	[dir=none,
+					fontcolor="#2D3436",
+					fontname="Sans-Serif",
+					fontsize=13,
+					pos="765.15,323 782.68,323 802.31,323 819.84,323",
+					style=dashed];
+			}
+			a10ad9f257eb4687900028ad3300c8fc -> a8be9379b023470697f9ba005ab97b01	[dir=none,
+				fontcolor="#2D3436",
+				fontname="Sans-Serif",
+				fontsize=13,
+				pos="297.15,323 314.68,323 334.31,323 351.84,323",
+				style=dashed];
+			"324dc9ce84db433398a9ad5a60a19942" -> "091584723e9f40fb80ac1a6a604edc19"	[dir=none,
+				fontcolor="#2D3436",
+				fontname="Sans-Serif",
+				fontsize=13,
+				pos="609.15,323 626.68,323 646.31,323 663.84,323",
+				style=dashed];
+		}
+		subgraph cluster_Dados {
+			graph [bb="656,472,929,675",
+				bgcolor="#EBF3E7",
+				fontname="Sans-Serif",
+				fontsize=12,
+				label=Dados,
+				labeljust=l,
+				lheight=0.18,
+				lp="683,664.5",
+				lwidth=0.53,
+				pencolor="#AEB6BE",
+				rankdir=LR,
+				shape=box,
+				style=rounded
+			];
+			f837a07f574f42439d2f27729d9f62b1	[height=2.3056,
+				image="/home/humbertoserpro/diagramas/.env/lib/python3.8/site-packages/resources/azure/identity/app-registrations.png",
+				label="Dados resultantes
+(ALI)",
+				pos="714.5,563",
+				shape=none,
+				width=1.4028];
+			"4675e93d4f46492a9d0d56c95eb6535d"	[height=2.3056,
+				image="/home/humbertoserpro/diagramas/.env/lib/python3.8/site-packages/resources/azure/analytics/stream-analytics-jobs.png",
+				label="Disponibilizar dados
+(CE/SE)",
+				pos="870.5,563",
+				shape=none,
+				width=1.4028];
+			f837a07f574f42439d2f27729d9f62b1 -> "4675e93d4f46492a9d0d56c95eb6535d"	[dir=forward,
+				fontcolor="#2D3436",
+				fontname="Sans-Serif",
+				fontsize=13,
+				pos="e,819.84,563 765.15,563 765.15,563 809.84,563 809.84,563"];
+		}
+		a10ad9f257eb4687900028ad3300c8fc -> f837a07f574f42439d2f27729d9f62b1	[dir=forward,
+			fontcolor="#2D3436",
+			fontname="Sans-Serif",
+			fontsize=13,
+			pos="e,663.7,604.5 264,406.32 264,489.32 264,604.5 264,604.5 264,604.5 653.7,604.5 653.7,604.5"];
+		"324dc9ce84db433398a9ad5a60a19942" -> f837a07f574f42439d2f27729d9f62b1	[dir=forward,
+			fontcolor="#2D3436",
+			fontname="Sans-Serif",
+			fontsize=13,
+			pos="e,663.71,521.5 576,406.03 576,460.43 576,521.5 576,521.5 576,521.5 653.71,521.5 653.71,521.5"];
+		"4153f0f392a44835b0d17b06456a05ff" -> f837a07f574f42439d2f27729d9f62b1	[dir=forward,
+			fontcolor="#2D3436",
+			fontname="Sans-Serif",
+			fontsize=13,
+			pos="e,740,479.98 871,406.02 871,426.65 871,443 871,443 871,443 740,443 740,443 740,443 740,469.98 740,469.98"];
+		"4153f0f392a44835b0d17b06456a05ff" -> f837a07f574f42439d2f27729d9f62b1	[dir=forward,
+			fontcolor="#2D3436",
+			fontname="Sans-Serif",
+			fontsize=13,
+			pos="e,715,479.64 896,406.35 896,417.13 896,424.5 896,424.5 896,424.5 715,424.5 715,424.5 715,424.5 715,469.64 715,469.64"];
+		f837a07f574f42439d2f27729d9f62b1 -> "324dc9ce84db433398a9ad5a60a19942"	[dir=forward,
+			fontcolor="#2D3436",
+			fontname="Sans-Serif",
+			fontsize=13,
+			pos="e,542,406.27 663.68,563 612.79,563 542,563 542,563 542,563 542,416.27 542,416.27"];
+		f837a07f574f42439d2f27729d9f62b1 -> "4153f0f392a44835b0d17b06456a05ff"	[dir=forward,
+			fontcolor="#2D3436",
+			fontname="Sans-Serif",
+			fontsize=13,
+			pos="e,846,406.36 690,479.65 690,468.87 690,461.5 690,461.5 690,461.5 846,461.5 846,461.5 846,461.5 846,416.36 846,416.36"];
+	}
+	subgraph cluster_Destino {
+		graph [bb="973,560,1090,791",
+			bgcolor="#E5F5FD",
+			fontname="Sans-Serif",
+			fontsize=12,
+			label=Destino,
+			labeljust=l,
+			lheight=0.18,
+			lp="1004,780.5",
+			lwidth=0.64,
+			pencolor="#AEB6BE",
+			rankdir=LR,
+			shape=box,
+			style=rounded
+		];
+		"5e6e1b0b642941d08b4a20ed8997ec37"	[height=2.6944,
+			image="/home/humbertoserpro/diagramas/.env/lib/python3.8/site-packages/resources/azure/compute/vm.png",
+			label="Aplicação
+Painél
+etc.",
+			pos="1031.5,665",
+			shape=none,
+			width=1.4028];
+	}
+	subgraph "cluster_Origem dos dados" {
+		graph [bb="20,33,146,208",
+			bgcolor="#E5F5FD",
+			fontname="Sans-Serif",
+			fontsize=12,
+			label="Origem dos dados",
+			labeljust=l,
+			lheight=0.18,
+			lp="83,197.5",
+			lwidth=1.53,
+			pencolor="#AEB6BE",
+			rankdir=LR,
+			shape=box,
+			style=rounded
+		];
+		"0939a27590f14c9b950d0e45adfdc7cc"	[height=1.9028,
+			image="/home/humbertoserpro/diagramas/.env/lib/python3.8/site-packages/resources/azure/analytics/data-factories.png",
+			label="(AIE)",
+			pos="82.5,110",
+			shape=none,
+			width=1.4028];
+	}
+	a10ad9f257eb4687900028ad3300c8fc -> "5e6e1b0b642941d08b4a20ed8997ec37"	[dir=forward,
+		fontcolor="#2D3436",
+		fontname="Sans-Serif",
+		fontsize=13,
+		pos="e,980.75,704 230,406.14 230,518.25 230,704 230,704 230,704 970.75,704 970.75,704"];
+	"4675e93d4f46492a9d0d56c95eb6535d" -> "5e6e1b0b642941d08b4a20ed8997ec37"	[dir=forward,
+		fontcolor="#2D3436",
+		fontname="Sans-Serif",
+		fontsize=13,
+		pos="e,980.89,607 921.44,607 921.44,607 970.89,607 970.89,607"];
+	"0939a27590f14c9b950d0e45adfdc7cc" -> a10ad9f257eb4687900028ad3300c8fc	[color=firebrick,
+		dir=forward,
+		fontcolor="#2D3436",
+		fontname="Sans-Serif",
+		fontsize=13,
+		label=I,
+		lp="167,264",
+		pos="e,247,239.87 133.2,132.83 181.53,132.83 247,132.83 247,132.83 247,132.83 247,229.87 247,229.87",
+		style=solid];
+	"0939a27590f14c9b950d0e45adfdc7cc" -> "324dc9ce84db433398a9ad5a60a19942"	[dir=forward,
+		fontcolor="#2D3436",
+		fontname="Sans-Serif",
+		fontsize=13,
+		pos="e,559,239.85 133.04,87.167 255.68,87.167 559,87.167 559,87.167 559,87.167 559,229.85 559,229.85"];
+}
